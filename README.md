@@ -25,7 +25,7 @@ npm install
 node BiliTVDownloader.js
 ```
 
-![vista visualstudio](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/38d2fe70-8c93-4c4e-bc89-387bc8e02a58)
+![vistavisual](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/042c4c4b-b5dc-4d58-8e11-38f7981a95a1)
 
 ## For those who prefer to download the releases:
 
