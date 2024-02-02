@@ -6,7 +6,13 @@
 # Requirements
 * Node.JS
 
+Normal installation.
+
+![8abf3a1a-444d-4e25-bd18-fda1ab6307ce](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/d02e52cf-23cc-4b03-86ba-b6988cf002b3)
+
 * FFmpeg
+
+Check this tutorial: https://www.youtube.com/watch?v=vEnSO6wWGGs
 
 # Usage
 * For those who use git clone:
@@ -59,6 +65,7 @@ node BiliTVDownloader.js
 
 ![download](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/ad9b6502-46a3-4d5a-b802-857af782f876)
 
+_Note: When the download is executed, a Downloads folder will be created in the same folder and the videos will be stored there._
   
 # Contribute
 
