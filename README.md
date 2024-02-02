@@ -1,7 +1,7 @@
 # Bili.TV-Downloader
 * Bili.TV Downloader is a command line javascript script that allows you to download Bilibili.tv videos in 720p quality and anime in 480p quality (for now) by merging video and audio with FFmepg.
 
-![Vista principal](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/de3f481e-f8ac-4044-9c7c-e9fb7b04cc17)
+![vistageneral](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/df30e27e-e118-4fa3-86e3-6fcabb6d5075)
 
 # Requirements
 
@@ -45,7 +45,7 @@ node BiliTVDownloader.js
 node BiliTVDownloader.js
 ```
 
-![terminal](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/202f1510-fa29-4fb7-ba5f-ec41981bf95b)
+![vistaterminal](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/04909773-2e17-4240-9127-a15a444d1723)
 
 # Downloading
 
@@ -64,7 +64,7 @@ node BiliTVDownloader.js
 
 * Once the link is pasted, enter and wait patiently for it to download and join the video + audio. Here it will depend on your internet and if the BiliBili server is working well lol.
 
-![download](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/ad9b6502-46a3-4d5a-b802-857af782f876)
+![downloadfinal](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/a22126ed-09ba-4999-a78b-757c9d1bf568)
 
 _Note: When the download is executed, a Downloads folder will be created in the same folder and the videos will be stored there._
   
