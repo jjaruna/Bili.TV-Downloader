@@ -3,6 +3,9 @@
 
 ![vistageneral](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/df30e27e-e118-4fa3-86e3-6fcabb6d5075)
 
+# DOCS
+* Tutorial en Español: https://youtu.be/iFKT-8lCZ-o?si=0QXm_3sXnd5ofV-6
+
 # Requirements
 
 Node.JS
