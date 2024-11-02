@@ -7,18 +7,33 @@ import { exec } from 'child_process'
 
 const nombre = `
 
-██████╗░██╗██╗░░░░░██╗░░░████████╗██╗░░░██╗
-██╔══██╗██║██║░░░░░██║░░░╚══██╔══╝██║░░░██║
-██████╦╝██║██║░░░░░██║░░░░░░██║░░░╚██╗░██╔╝
-██╔══██╗██║██║░░░░░██║░░░░░░██║░░░░╚████╔╝░
-██████╦╝██║███████╗██║██╗░░░██║░░░░░╚██╔╝░░
-╚═════╝░╚═╝╚══════╝╚═╝╚═╝░░░╚═╝░░░░░░╚═╝░░░
+             ██████╗░██╗██╗░░░░░██╗░░░████████╗██╗░░░██╗
+             ██╔══██╗██║██║░░░░░██║░░░╚══██╔══╝██║░░░██║
+             ██████╦╝██║██║░░░░░██║░░░░░░██║░░░╚██╗░██╔╝
+             ██╔══██╗██║██║░░░░░██║░░░░░░██║░░░░╚████╔╝░
+             ██████╦╝██║███████╗██║██╗░░░██║░░░░░╚██╔╝░░
+             ╚═════╝░╚═╝╚══════╝╚═╝╚═╝░░░╚═╝░░░░░░╚═╝░░░
 
 `;
 
+const cargarCookiesDesdeArchivo = (rutaArchivo) => {
+    try {
+        const data = fs.readFileSync(rutaArchivo, 'utf-8');
+        const cookiesArray = data.split('\n').map(line => line.trim()).filter(line => line);
+
+        return cookiesArray.join('; ');
+    } catch (error) {
+        console.error(`Error loading cookies: ${error.message}`);
+        return '';
+    }
+};
+
+const cookies = cargarCookiesDesdeArchivo('./cookies.txt');
+
 axios.defaults.headers = {
-    referer: ' https://www.bilibili.tv/', cookie: process.env.COOKIE
-  }
+    referer: 'https://www.bilibili.tv/',
+    cookie: cookies,
+};
 
 const obtenerValorDespuesDeVideo = (enlace) => {
     const urlParseada = new URL(enlace);
@@ -71,12 +86,15 @@ const obtenerUrlDeVideoYAudio = async (valor, calidadDeseada = 64) => {
             for (const videoInfo of datos.data.playurl.video) {
                 const videoResource = videoInfo.video_resource || {};
                 const streamInfo = videoInfo.stream_info || {};
-                const calidadVideo = streamInfo.quality || 80;
+                const calidadVideo = streamInfo.quality || 112;
         
-                if (calidadVideo === 80 && videoResource.url.trim() !== '') {
+                if (calidadVideo === 112 && videoResource.url.trim() !== '') {
                     urlVideo = videoResource.url || '';
                     break;
-                } else if (calidadVideo === 64 && videoResource.url.trim() !== '') {
+                } else if (calidadVideo === 80 && videoResource.url.trim() !== '') {
+                    urlVideo = videoResource.url || '';
+                    break;
+                }   else if (calidadVideo === 64 && videoResource.url.trim() !== '') {
                     urlVideo = videoResource.url || '';
                     break;
                 } else if (calidadVideo === 32 && videoResource.url.trim() !== '') {
