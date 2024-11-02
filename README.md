@@ -1,5 +1,7 @@
 # Bili.TV-Downloader
-* Bili.TV Downloader is a command line javascript script that allows you to download Bilibili.tv videos in 720p quality and anime in 480p quality (for now) by merging video and audio with FFmepg.
+* Bili.TV Downloader is a command line javascript script that allows you to download Bilibili.tv videos in 1080p quality and anime in 720p quality by merging video and audio with FFmepg.
+
+* Actualización v1.1 02/11/2024 : https://youtu.be/wiV1PvDF1YM
 
 ![vistageneral](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/df30e27e-e118-4fa3-86e3-6fcabb6d5075)
 
@@ -79,9 +81,9 @@ _Note: When the download is executed, a Downloads folder will be created in the 
 
 # Upcoming improvements
 
-* Find out how to import the Browsing Cookie to be able to download videos in 1080p and Anime in 720p.
+* Find out how to import the Browsing Cookie to be able to download videos in 1080p and Anime in 720p. ✅
 
-* Add the option to download subtitles in .str format, only if the user wants it.
+* Add the option to download subtitles in .str format, only if the user wants it. ❌
 
 # Other Proyects 
 
