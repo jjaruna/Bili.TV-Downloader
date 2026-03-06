@@ -91,7 +91,7 @@ function construirInfoApi(info) {
         return {
             tipo: "video",
             id: info.aid,
-            //descripcion: `Detected normal video (aid=${info.aid})`,
+            descripcion: `Detected normal video (aid=${info.aid})`,
         };
     }
 
@@ -100,7 +100,7 @@ function construirInfoApi(info) {
             tipo: "anime",
             id: info.ep_id,
             season_id: info.season_id ?? null,
-            //descripcion: `Detected anime/episode (ep_id=${info.ep_id})`,
+            descripcion: `Detected anime/episode (ep_id=${info.ep_id})`,
         };
     }
 
@@ -299,4 +299,5 @@ rl.question("Enter the link: ", async (enlaceOriginal) => {
 
     await descargarVideoYAudio(apiInfo);
 });
+
 
