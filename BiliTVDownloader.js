@@ -91,7 +91,7 @@ function construirInfoApi(info) {
         return {
             tipo: "video",
             id: info.aid,
-            descripcion: `Detected normal video (aid=${info.aid})`,
+            //descripcion: `Detected normal video (aid=${info.aid})`,
         };
     }
 
@@ -100,7 +100,7 @@ function construirInfoApi(info) {
             tipo: "anime",
             id: info.ep_id,
             season_id: info.season_id ?? null,
-            descripcion: `Detected anime/episode (ep_id=${info.ep_id})`,
+            //descripcion: `Detected anime/episode (ep_id=${info.ep_id})`,
         };
     }
 
@@ -138,7 +138,7 @@ async function obtenerUrlDeVideoYAudio(apiInfo) {
 
                 if (calidad === calidadObjetivo && resource.url?.trim()) {
                     urlVideo = resource.url;
-                    console.log(`Video quality selected: ${calidadObjetivo}`);
+                    //console.log(`Video quality selected: ${calidadObjetivo}`); debugging quality
                     break;
                 }
             }
@@ -299,3 +299,4 @@ rl.question("Enter the link: ", async (enlaceOriginal) => {
 
     await descargarVideoYAudio(apiInfo);
 });
+
