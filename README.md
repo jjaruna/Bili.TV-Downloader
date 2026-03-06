@@ -12,9 +12,9 @@
 
 Node.JS
 
-* Normal installation.
+* Normal installation. (PreBuilt for Windows)
 
-![8abf3a1a-444d-4e25-bd18-fda1ab6307ce](https://github.com/jjaruna/Bili.TV-Downloader/assets/106907367/d02e52cf-23cc-4b03-86ba-b6988cf002b3)
+<img width="771" height="134" alt="image" src="https://github.com/user-attachments/assets/08239f00-296b-48fd-a3b0-50860142aee6" />
 
 FFmpeg
 
